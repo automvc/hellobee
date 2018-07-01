@@ -3,29 +3,28 @@ Bee
 =========
 Bee is ORM framework.
 Honey implements the interface in the Bee.
-Bee see:
-https://github.com/automvc/bee
-Honey see:
-https://github.com/automvc/honey
+Bee see:</br>
+https://github.com/automvc/bee</br>
+Honey see:</br>
+https://github.com/automvc/honey</br>
 
 <h1> Function: </h1>
-<B>Bee</B> is <B>Sea</B>(Simple, Easy, Automatic) style ORM framework.
-V1.0
-Single entity Suid (select,update,insert,delete) object-oriented operation.
-Automatic generate the Javabean via DB table (mysql).
-PreparedStatement support.
-Procedure support.
-Native SQL support.
-Automatic filter the null and empty field for default.
-Order by,MAX,MIN,SUM,AVG,COUNT support.
+<B>Bee</B> is <B>Sea</B>(Simple, Easy, Automatic) style ORM framework.</br>
+V1.0</br>
+Single entity Suid (select,update,insert,delete) object-oriented operation.</br>
+Automatic generate the Javabean via DB table (mysql).</br>
+PreparedStatement support.</br>
+Procedure support.</br>
+Native SQL support.</br>
+Automatic filter the null and empty field for default.</br>
+Order by,MAX,MIN,SUM,AVG,COUNT support.</br>
 
 
 Quick Start:
-=========
-
-public static void main(String[] args) {
-		Suid suid=BeeFactory.getHoneyFactory().getSuid();
+=========	
 		
+	public static void main(String[] args) {
+		Suid suid=BeeFactory.getHoneyFactory().getSuid();
 		Orders orders1=new Orders();
 		orders1.setId(100001L);
 		orders1.setName("Bee--ORM Framework");
