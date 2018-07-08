@@ -51,6 +51,8 @@ bee.db.password =
 
 ##3. Run the following java code  
 
+* [See the docs]
+
 ```java
 		
 	public static void main(String[] args) {
