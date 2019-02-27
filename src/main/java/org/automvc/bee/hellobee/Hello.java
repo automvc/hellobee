@@ -1,4 +1,4 @@
-package org.bee.hellobee;
+package org.automvc.bee.hellobee;
 
 /**
  * @author KingStar
