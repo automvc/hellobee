@@ -4,8 +4,8 @@ Bee
 **Bee** 是一个 ORM框架。  
 **Honey** 是Bee的实现。  
 **Bee** 是一个具有省时/优雅、简易、自动( **Tea:** Timesaving/Tasteful, Easy, Automatic) 风格的ORM框架。  
-你还在为不断重复写orm操作数据库的代码而烦恼吗?每写一个service业务层，就要写一个dao层(即使我们知道dao就是简单的查改增删suid操作)。  
-请试试**Bee** 吧，让它帮你从烦琐的编码工程中解脱出来。  
+你还在为不断重复写ORM操作数据库的代码而烦恼吗?每写一个service业务层，就要写一个dao层(即使我们知道dao就是简单的查改增删suid操作)。  
+请试试**Bee** 吧，让它帮你从烦琐的编码工作中解脱出来。  
 Bee是一种更接近SQL语言思维的ORM框架，  
 一种开发速度和开发成本都不比php差的Java ORM框架，  
 而且它的编码复杂度是O(1)。  
@@ -58,19 +58,36 @@ Procedure存储过程支持(CallableStatement.executeQuery).
 
 快速开始:
 =========	
-## 1. 创建数据库和表  
+## 1. 引入Bee  
+#### 1.1 maven工程,添加如下依赖  
+
+		<dependency>
+			<groupId>org.teasoft</groupId>
+			<artifactId>bee</artifactId>
+			<version>1.4.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.teasoft</groupId>
+			<artifactId>honey</artifactId>
+			<version>1.4.23</version>
+		</dependency>
+
+#### 1.2  也可以直接下载jar文件  	
+		
+## 2. 创建数据库和表  
 
 创建一个数据库,默认名称为bee.  
 用bee.sql脚本创建一个表和插入初始化数据.  
 
-## 2. 更新数据库的配置信息(在bee.properties)  
+## 3. 更新数据库的配置信息(在bee.properties)  
 
 bee.db.driverName = com.mysql.jdbc.Driver  
 bee.db.url =jdbc:mysql://localhost:3306/bee?characterEncoding=UTF-8  
 bee.db.username = root  
 bee.db.password =  
 
-## 3. 运行下面的 java代码    
+## 4. 运行下面的 java代码    
 
 ```java
 		
