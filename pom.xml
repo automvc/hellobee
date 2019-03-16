@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.automvc</groupId>
 	<artifactId>hellobee</artifactId>
-	<version>1.0</version>
+	<version>1.1.6</version>
 	<packaging>jar</packaging>
 
 	<properties>
@@ -13,12 +13,7 @@
 	<name>hellobee</name>
 	<description>Test for deployment to the Central Repository via OSSRH</description>
 	<url>http://github.com/automvc/hellobee</url>
-	<licenses>
-		<license>
-			<name>The Apache Software License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-		</license>
-	</licenses>
+
 	<developers>
 		<developer>
 			<name>automvc</name>
@@ -33,6 +28,26 @@
 		<url>http://github.com/automvc/hellobee</url>
 	</scm>
 
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.teasoft</groupId>
+			<artifactId>bee</artifactId>
+			<version>1.4.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.teasoft</groupId>
+			<artifactId>honey</artifactId>
+			<version>1.4.23</version>
+		</dependency>
+	</dependencies>
+	
 	<profiles>
 		<profile>
 			<id>release</id>
@@ -73,7 +88,7 @@
 						<version>1.5</version>
 						<executions>
 							<execution>
-							<id>sign-artifacts</id>
+								<id>sign-artifacts</id>
 								<phase>verify</phase>
 								<goals>
 									<goal>sign</goal>
@@ -85,7 +100,7 @@
 					<plugin>
 						<groupId>org.sonatype.plugins</groupId>
 						<artifactId>nexus-staging-maven-plugin</artifactId>
-						<version>1.6.8</version>
+						<version>1.6.7</version>
 						<extensions>true</extensions>
 						<configuration>
 							<serverId>ossrh</serverId>
