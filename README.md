@@ -1,19 +1,28 @@
 
 Bee
 =========
-**Bee** 是一个 ORM框架。  
-**Honey** 是Bee的实现。  
+**Bee** 是一个 ORM框架,它的开发速度快，编码少,还很简单。    
 **Bee** 是一个具有省时/优雅、简易、自动( **Tea:** Timesaving/Tasteful, Easy, Automatic) 风格的ORM框架。  
 你还在为不断重复写ORM操作数据库的代码而烦恼吗?每写一个service业务层，就要写一个dao层(即使我们知道dao就是简单的查改增删suid操作)。  
 请试试**Bee** 吧，让它帮你从烦琐的编码工作中解脱出来。  
 Bee是一种更接近SQL语言思维的ORM框架，  
 一种开发速度和开发成本都不比php差的Java ORM框架，  
-而且它的编码复杂度是O(1)。  
+而且它的编码复杂度是O(1)，即用了Bee，你可以不用另外再写dao代码。  
+
+## Bee主要功能特点介绍：  
+* 1.接口简单，使用方便。Suid接口只有4个方法,对应SQL语言的select,update,insert,delete操作。  
+* 2.使用了Bee,你可以不用再另外编写dao代码，直接调用Bee的api即可完成对DB的操作。  
+* 3.Javabean没有注解,也不需要xml映射文件,只是纯的Javabean即可,甚至get,set方法不用也可以。  
+* 4.自动过滤null和空字符串，不用再写一堆的判断非空的代码。  
+* 5.支持只查询一部分字段。  
+* 6.动态/任意组合查询条件,不需要提前准备dao接口,有新的查询需求也不用修改或添加接口。  
+* 7.支持存储过程，支持原生SQL，支持事务，支持批处理操作。  
+* 8.SQL中排序,分页支持。  
+* 9.支持直接返回Json格式查询结果;链式编程。  
+
 
 **Bee** 网址:  
 https://github.com/automvc/bee  
-**Honey** 网址:  
-https://github.com/automvc/honey  
 **Bee在gitee** 的网址:  
 https://gitee.com/automvc/bee
 
@@ -37,14 +46,14 @@ Procedure存储过程支持.
 Transaction事务支持.  
 自动过滤null和空字符串(作为默认实现).  
 SQL中函数:MAX,MIN,SUM,AVG,COUNT支持.  
-SQL中排序,分页.  
+SQL中排序,分页支持.  
 支持只查询一部分字段.  
-动态/任意组合查询条件,不需要提前准备dao接口,有新的查询需要也不用添加和修改接口.  
+动态/任意组合查询条件,不需要提前准备dao接口,有新的查询需求也不用修改或添加接口.  
 所有的suid操作都是用同一个bee接口,不用再定义任何新的dao接口,更不用实现dao接口.  
 用户/开发者仅需要关注bee接口如何调用即可.  
 
 **V1.1**  
-Json格式结果支持.  
+直接返回Json格式查询结果支持.  
 Procedure存储过程支持(CallableStatement.executeQuery).  
 
 **V1.2**  
@@ -54,13 +63,15 @@ Procedure存储过程支持(CallableStatement.executeQuery).
 增加:select/update链式编程
 
 **V1.4**  
-增加: selectById,deleteById
+增加: selectById,deleteById  
+增加: public <T> List<T> select(T entity,String selectFields,int from,int size)  
 
 快速开始:
 =========	
 ## 1. 引入Bee  
 #### 1.1 maven工程,添加如下依赖  
 
+```xml
 		<dependency>
 			<groupId>org.teasoft</groupId>
 			<artifactId>bee</artifactId>
@@ -72,6 +83,7 @@ Procedure存储过程支持(CallableStatement.executeQuery).
 			<artifactId>honey</artifactId>
 			<version>1.4.23</version>
 		</dependency>
+```
 
 #### 1.2  也可以直接下载jar文件  	
 		
@@ -146,6 +158,14 @@ public class SuidExam {
 }
 
 ```
+
+综合应用:
+=========	
+**更快的开发Java Web的新组合：**  
+[Bee+Spring+SpringMVC](../../../../aiteasoft/bee-spring-springmvc)  
+
+**更快的开发Spring Cloud微服务的新组合：**  
+[Bee + Spring Boot](../../../bee-springboot)  
 
 
 #### 作者的电子邮箱email:    honeysoft@126.com  
