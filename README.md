@@ -165,9 +165,8 @@ public class SuidExam {
 [Bee+Spring+SpringMVC](../../../../aiteasoft/bee-spring-springmvc)  
 
 **更快的开发Spring Cloud微服务的新组合：**  
-[Bee + Spring Boot](../../../bee-springboot)  
-	
-	
+[Bee + Spring Boot](../../../bee-springboot)  	
+&nbsp;&nbsp;
 
 #### 作者的电子邮箱email:    honeysoft@126.com  
 #### 如有任何相关建议,欢迎给作者发邮件,不胜感激!  
