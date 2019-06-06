@@ -93,6 +93,7 @@ Procedure存储过程支持(CallableStatement.executeQuery).
 用bee.sql脚本创建一个表和插入初始化数据.  
 
 ## 3. 更新数据库的配置信息(在bee.properties)  
+注:如果还没有bee.properties文件,可以自己新建一个.
 
 bee.db.driverName = com.mysql.jdbc.Driver  
 bee.db.url =jdbc:mysql://localhost:3306/bee?characterEncoding=UTF-8  
@@ -165,9 +166,12 @@ public class SuidExam {
 [Bee+Spring+SpringMVC](../../../../aiteasoft/bee-spring-springmvc)  
 
 **更快的开发Spring Cloud微服务的新组合：**  
-[Bee + Spring Boot](../../../bee-springboot)  	
-&nbsp;&nbsp;
+[Bee + Spring Boot](../../../bee-springboot)  
 
+......  
+  
+联系与欢迎:
+=========	
 #### 作者的电子邮箱email:    honeysoft@126.com  
 #### 如有任何相关建议,欢迎给作者发邮件,不胜感激!  
 #### 同时,也欢迎你加入到Bee框架的开发之中,相信有你的加入,Bee会更加美好! 
