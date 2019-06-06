@@ -166,7 +166,8 @@ public class SuidExam {
 
 **更快的开发Spring Cloud微服务的新组合：**  
 [Bee + Spring Boot](../../../bee-springboot)  
-
+	
+	
 
 #### 作者的电子邮箱email:    honeysoft@126.com  
 #### 如有任何相关建议,欢迎给作者发邮件,不胜感激!  
