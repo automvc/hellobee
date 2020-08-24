@@ -127,9 +127,24 @@ Q:&nbsp;Bee设计原理?
 
 A: 参考wiki或公众号相关文章: (十一)：如何设计ORM架构及Bee源码分析 (十二)：为什么需要一个新的ORM框架
 
-13.Q:&nbsp;Bee查询自己怎么写筛选条件呢？像筛选状态大于2的 A: 写法类似： Condition condition=new ConditionImpl(); condition .op("status", Op.gt, 2) // 会转化到SQL中的where status&gt;2 详情参考wiki: (五): 复杂查询(面向对象方式) (十三)：update高级用法说明 更新的字段是在原来的基础上变化 如某类商品提价2元，可以有如下写法。 set price=price+2 这样写的好处，可以不需要查询出原来的价格，减少IO开销。 Bee的面向对象写法： condition.setAdd("price", 2); suidRich.update(entity,condition);
+13.Q:&nbsp;Bee查询自己怎么写筛选条件呢？像筛选状态大于2的 
 
-若字段p每次增加的值由字段step配置，则写为： condition.setAdd("p", "step"); 会转化为: set p=p+step
+A: 写法类似： Condition condition=new ConditionImpl(); condition .op("status", Op.gt, 2) // 会转化到SQL中的where status&gt;2 详情参考wiki: (五): 复杂查询(面向对象方式) (十三)：update高级用法说明    
+ **更新的字段是在原来的基础上变化** 
+如某类商品提价2元，可以有如下写法。    
+set price=price+2    
+ **这样写的好处，可以不需要查询出原来的价格，减少IO开销。**     
+Bee的面向对象写法：    
+condition.setAdd("price", 2);     
+suidRich.update(entity,condition);    
+
+若字段p每次增加的值由字段step配置，则写为：    
+condition.setAdd("p", "step");    
+会转化为: set p=p+step	
+
+13.Q:&nbsp;Bee与Honey是什么关系? 
+
+A: ORM Bee框架是采用接口与实现分离的设计方式.Bee是接口,而Honey则是Bee的实现.	
 
 其它相关资源:
 
