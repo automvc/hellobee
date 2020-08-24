@@ -142,11 +142,11 @@ suidRich.update(entity,condition);
 condition.setAdd("p", "step");    
 会转化为: set p=p+step	
 
-13.Q:&nbsp;Bee与Honey是什么关系? 
+14.Q:&nbsp;Bee与Honey是什么关系? 
 
 A: ORM Bee框架是采用接口与实现分离的设计方式.Bee是接口,而Honey则是Bee的实现.	
 
-其它相关资源:
+**其它相关资源:**
 
 gitee issue:&nbsp;[https://gitee.com/automvc/bee/issues?assignee\_id=&amp;author\_id=&amp;branch=&amp;issue\_search=&amp;label\_name=&amp;milestone\_id=&amp;program\_id=&amp;scope=&amp;sort=&amp;state=closed](https://gitee.com/automvc/bee/issues?assignee_id=&amp;author_id=&amp;branch=&amp;issue_search=&amp;label_name=&amp;milestone_id=&amp;program_id=&amp;scope=&amp;sort=&amp;state=closed)&nbsp;
 
