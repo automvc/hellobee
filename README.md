@@ -83,6 +83,8 @@ fixed null bug about:PreparedSql's method select(String sql,Object preValues[]).
 
 ## Compare	
 
+[ORM-Compare](../../../orm-compare)  
+
 Test Evn : Local windows.  
 DB: MySQL (Version 5.6.24).  
 Test point: Batch Insert;Select paging; Transaction(update and select).  
@@ -129,7 +131,7 @@ Test point: Batch Insert;Select paging; Transaction(update and select).
   <col width="69" span="2" />
   <col width="96" />
   <tr height="19">
-    <td colspan="6" height="19" width="429"><div align="center">select(unit: ms)</div></td>
+    <td colspan="6" height="19" width="429"><div align="center">Select(unit: ms)</div></td>
   </tr>
   <tr height="19">
     <td height="19">　</td>
