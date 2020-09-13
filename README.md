@@ -82,6 +82,11 @@ fixed null bug about:PreparedSql's method select(String sql,Object preValues[]).
 [click for:  Function Detail](../../../bee/blob/master/Changed_Log.md)  
 
 ## Compare	
+
+Test Evn : Local windows.  
+DB: MySQL (Version 5.6.24).  
+Test point: Batch Insert;Select paging; Transaction(update and select).  
+
 <table cellspacing="0" cellpadding="0">
   <col width="62" />
   <col width="69" />
@@ -89,7 +94,7 @@ fixed null bug about:PreparedSql's method select(String sql,Object preValues[]).
   <col width="69" span="2" />
   <col width="96" />
   <tr height="19">
-    <td colspan="6" height="19" width="429">Batch Insert(unit: ms)</td>
+    <td colspan="6" height="19" width="429"><div align="center">Batch Insert(unit: ms)</div></td>
   </tr>
   <tr height="19">
     <td height="19">　</td>
@@ -124,7 +129,7 @@ fixed null bug about:PreparedSql's method select(String sql,Object preValues[]).
   <col width="69" span="2" />
   <col width="96" />
   <tr height="19">
-    <td colspan="6" height="19" width="429">select(unit: ms)</td>
+    <td colspan="6" height="19" width="429"><div align="center">select(unit: ms)</div></td>
   </tr>
   <tr height="19">
     <td height="19">　</td>
@@ -159,7 +164,7 @@ fixed null bug about:PreparedSql's method select(String sql,Object preValues[]).
   <col width="69" span="2" />
   <col width="96" />
   <tr height="19">
-    <td colspan="6" height="19" width="429">Transaction(update and select) (unit: ms)</td>
+    <td colspan="6" height="19" width="429"><div align="center">Transaction(update and select) (unit: ms)</div></td>
   </tr>
   <tr height="19">
     <td height="19">　</td>
