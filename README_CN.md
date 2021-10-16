@@ -125,7 +125,7 @@ bee.databaseName=mysql
 bee.db.driverName = com.mysql.jdbc.Driver  
 bee.db.url =jdbc:mysql://localhost:3306/bee?characterEncoding=UTF-8  
 bee.db.username = root  
-bee.db.password = test 
+bee.db.password =  
 
 ## 4. 运行下面的 java代码    
 
