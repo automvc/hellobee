@@ -208,7 +208,7 @@ public class SuidExam {
   
 联系与欢迎:
 =========	
-#### 作者的电子邮箱email:    honeysoft@126.com  
+#### 作者的电子邮箱email:   honeysoft@126.com  
 #### 如有任何相关建议,欢迎给作者发邮件,不胜感激!  
 #### 更多设计思想,请关注微信公众号: 软件设计活跃区  
 <img src="weixin.jpg" width="200" heigh="200">
