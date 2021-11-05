@@ -17,9 +17,9 @@ Bee是一种更接近SQL语言思维的ORM框架，
 一种开发速度和开发成本都不比Php,Ruby on Rail差的Java ORM框架，  
 而且它的编码复杂度是O(1)，即用了Bee，**无论多少个表**,你都可以不用另外再写dao代码；让你可以更专注地投入到业务逻辑的开发。  
 
-<table  cellspacing="0" cellpadding="0" style="bordercolor: blue" width="742" height="310" border="1" cellspacing="0">
+<table style="bordercolor: blue" width="742" height="300" border="1" cellspacing="0" cellpadding="0">
   <tr>
-    <th width="98" height="54" scope="col">英文简称</th>
+    <th width="98" height="58" scope="col">英文简称</th>
     <th width="116" scope="col">英文意义</th>
     <th width="412" scope="col">中文意义</th>
     <th width="98" scope="col">进步</th>
