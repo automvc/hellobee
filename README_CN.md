@@ -17,34 +17,34 @@ Bee是一种更接近SQL语言思维的ORM框架，
 一种开发速度和开发成本都不比Php,Ruby on Rail差的Java ORM框架，  
 而且它的编码复杂度是O(1)，即用了Bee，**无论多少个表**,你都可以不用另外再写dao代码；让你可以更专注地投入到业务逻辑的开发。  
 
-<table style="bordercolor: blue" width="742" height="260" border="1" cellspacing="0">
+<table  cellspacing="0" cellpadding="0" style="bordercolor: blue" width="742" height="310" border="1" cellspacing="0">
   <tr>
-    <th width="98" height="50" scope="col">英文简称</th>
+    <th width="98" height="54" scope="col">英文简称</th>
     <th width="116" scope="col">英文意义</th>
     <th width="412" scope="col">中文意义</th>
     <th width="98" scope="col">进步</th>
   </tr>
   <tr>
-    <td height="54"> <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AI</strong></td>
+    <td height="58"> <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AI</strong></td>
     <td><strong>&nbsp;&nbsp;&nbsp;&nbsp;AI</strong></td>
     <td><strong>&nbsp;&nbsp;&nbsp;&nbsp;AI</strong>智能(识别出重复代码，类似代码)</td>
     <td><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更智能</strong></td>
   </tr>
   <tr>
-    <td height="60"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T</strong></td>
+    <td height="64"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T</strong></td>
     <td><strong>&nbsp;&nbsp;&nbsp;&nbsp;T</strong>imesaving<br />
       <strong>&nbsp;&nbsp;&nbsp;&nbsp;T</strong>asteful</td>
     <td><strong>&nbsp;&nbsp;&nbsp;&nbsp;省时</strong>(<strong>快</strong>:开发时间少、运行时间少）,代码更<strong>优雅</strong></td>
     <td><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更快</strong></td>
   </tr>
   <tr>
-    <td height="54"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E</strong></td>
+    <td height="58"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E</strong></td>
     <td><strong>&nbsp;&nbsp;&nbsp;&nbsp;E</strong>asy</td>
     <td><strong>&nbsp;&nbsp;&nbsp;&nbsp;简单</strong>，易用</td>
     <td><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更简单</strong></td>
   </tr>
   <tr>
-    <td height="54"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A</strong></td>
+    <td height="58"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A</strong></td>
     <td><strong>&nbsp;&nbsp;&nbsp;&nbsp;A</strong>utomatic</td>
     <td><strong>&nbsp;&nbsp;&nbsp;&nbsp;自动</strong>(编码少,编码复杂度为O(1),让用户<strong>只需关注业务</strong>)</td>
     <td><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更自动</strong></td>
